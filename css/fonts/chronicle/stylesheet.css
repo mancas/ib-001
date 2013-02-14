@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'chronicle';
+    src: url('chronicledispsemibold.eot');
+    src: url('chronicledispsemibold.eot?#iefix') format('embedded-opentype'),
+         url('chronicledispsemibold.woff') format('woff'),
+         url('chronicledispsemibold.ttf') format('truetype'),
+         url('chronicledispsemibold.svg#chronicle') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

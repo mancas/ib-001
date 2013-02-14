@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'didothtfm';
+    src: url('didothtfm96medium.eot');
+    src: url('didothtfm96medium.eot?#iefix') format('embedded-opentype'),
+         url('didothtfm96medium.woff') format('woff'),
+         url('didothtfm96medium.ttf') format('truetype'),
+         url('didothtfm96medium.svg#didothtfm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

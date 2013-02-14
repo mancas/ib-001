@@ -1,0 +1,299 @@
+.brand h1 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.brand h1 span{
+	display:block;
+	font-size: 11px;
+	letter-spacing: 12px;
+}
+
+#iventia-banner-top{
+	margin-top: 20px;
+}
+
+#iventia-banner-top h2{
+	margin-top: 20px;
+	margin-bottom: 0;
+	line-height: 40px;
+	font-size:20px;	
+}
+
+#iventia-banner-top h2 strong{
+	font-size:80px;
+}
+
+.navbar .btn-navbar {
+	float: right;
+	padding: 7px 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+.nav-collapse .nav > li > a,
+.nav-collapse .dropdown-menu a {
+	padding: 6px 10px 6px 10px;
+	text-transform: uppercase;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	background-color: transparent;
+	display:block;
+}
+
+/* Large desktop */
+@media (min-width: 979px) {
+
+	#iventia-banner-top-text h2{
+		margin-top: 0;
+		line-height: 70px;
+		font-size:60px;
+	}
+
+	#iventia-banner-top-text h2 strong{
+		font-size:120px;
+	}
+
+	.brand h1 {
+		margin-top: 28px;
+		margin-bottom: 5px;
+		line-height: 24px;
+		text-transform: uppercase;
+		font-size: 42px;
+	}
+
+	.brand h1 span{
+		display:block;
+		font-size: 11px;
+		letter-spacing: 16px;
+	}	
+
+	.nav-collapse .nav > li > a,
+	.nav-collapse .dropdown-menu a {
+		padding: 33px 10px 30px 10px;
+	}
+
+	#iventia-banner-top{
+		margin-top: 0;
+	}
+
+	.navbar-inner ul.nav{
+		float:right !important;
+		margin-right: 0;
+		height:83px;
+	}
+
+	#iventia-banner-top-text{
+		margin:0;
+		text-align: left;
+		padding: 80px 0 20px 60px;
+		width: 400px;
+	}
+
+	.boxshadow .navbar-form{
+		border:none;
+		-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.4);
+		-moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.4);
+		box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.4);
+	}
+
+	.navbar-form{
+		border-bottom:none !important;
+		background:#fff !important;
+		width:248px;
+		margin-top: 83px;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		position: absolute;
+		right:0;
+	}
+
+	.navbar-form fieldset{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.navbar-form fieldset{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.navbar-inner ul.nav li:last-child a{
+		margin-right: 0;
+	}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 732px) and (max-width: 979px) {
+
+	.hidden-phone{
+		display:block !important;
+	}
+
+	#iventia-banner-top{
+		margin-top: 0;
+	}
+
+	.brand h1 {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		line-height: 24px;
+		text-transform: uppercase;
+		font-size: 28px;
+	}
+
+	.brand h1 span{
+		display:block;
+		font-size: 11px;
+		letter-spacing: 12px;
+	}
+
+	[class*="span"],
+	.uneditable-input[class*="span"],
+	.row-fluid [class*="span"] {
+		float: left;
+		margin-left: 20px;
+	}
+
+	.row-fluid .span2 {
+		width: 20%;
+	}
+
+	.row-fluid .span3 {
+		width: 22.682820513%;
+	}
+
+	.row-fluid .span4 {
+		width: 48%;
+	}
+
+	.row-fluid .span9 {
+		width: 74.35897435897436%;
+	}
+
+	.row-fluid .span10 {
+		width: 97.872928%;
+	}
+
+	.navbar .btn-navbar {
+		display: none;
+	}
+
+	.nav-collapse, .nav-collapse.collapse {
+		height: 100%;
+		overflow: auto;
+	}
+
+	.nav-collapse.collapse {
+		height: auto!important;
+		overflow: visible!important;
+	}
+	.navbar-inner ul.nav{
+		display:block;
+		padding-top: 10px;
+		width: auto;
+	}
+
+	.navbar-inner .container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.nav-collapse .nav > li > a,
+	.nav-collapse .dropdown-menu a {
+		padding: 6px 10px 6px 10px;
+		font-size: 11px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		float:left;
+	}
+
+	.boxshadow .navbar-form{
+		border:none;
+		-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.4);
+		-moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.4);
+		box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.4);
+	}
+
+	.navbar-form{
+		border-bottom:none !important;
+		background:#fff !important;
+		width:248px;
+		margin-top: 30px !important;
+		padding: 0 !important;
+		padding-bottom: 0 !important;
+		position: absolute;
+		right:25px;
+	}
+
+	.navbar-form fieldset{
+		margin-top: 10px !important;
+		margin-bottom: 5px !important;
+		padding-left: 10px;
+		padding-right: 10px;
+	}	
+
+	.navbar-form fieldset{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.navbar-inner ul.nav li:last-child a{
+		margin-right: 0;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 320px) and (max-width: 732px) {
+
+	.navbar-inner {
+		min-height:53px;
+	}
+
+	.navbar .btn-navbar {
+		float: right;
+		padding: 7px 10px;
+		margin-right: 5px;
+		margin-left: 5px;
+		margin-top: 15px;
+	}
+
+	.navbar-inner ul.nav{
+		display:block;
+		padding-top: 10px;
+		width: auto;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	#iventia-banner-top h2{
+		margin-bottom: 0;
+		line-height: 40px;
+		font-size:30px;	
+	}
+
+	#iventia-banner-top h2 strong{
+		font-size:80px;
+	}
+
+}
+
+/* Old phones */
+@media (max-width: 320px) {
+
+	.navbar .btn-navbar {
+		float: right;
+		padding: 7px 10px;
+		margin-right: 5px;
+		margin-left: 5px;
+		margin-top: 15px;
+	}
+
+}
