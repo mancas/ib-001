@@ -1,0 +1,549 @@
+/*INCLUIMOS FONT FACE*/
+@import url('css/fonts/proximanova/stylesheet.css');
+@import url('css/fonts/didothtf/stylesheet.css');
+@import url('css/fonts/chronicle/stylesheet.css');
+@import url('css/fonts/futuracondensedmedium/stylesheet.css');
+
+/*ETIQUETAS*/
+
+body{
+	color:#333;
+	font-family: 'proxima_nova_rgregular';
+	background: #ebebeb !important;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border:1px solid #ccc;
+	background-color: #f7f7f7;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+    -moz-box-shadow: inset 1px 1px 2px 1px rgba(102, 102, 102, 0.1);
+    -webkit-box-shadow: inset 1px 1px 2px 1px rgba(102, 102, 102, 0.1);
+	box-shadow: inset 1px 1px 2px 1px rgba(102, 102, 102, 0.1); 
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	border-color: rgba(104, 50, 162, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+  /* IE6-9 */
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(104, 50, 162, 0.6);
+	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(104, 50, 162, 0.6);
+	      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(104, 50, 162, 0.6);
+}
+
+a{
+	color:#6832a2;
+}
+
+a:hover{
+	color:#6832a2;text-decoration:none;
+}
+
+h3{
+	font-size: 18px;
+}
+
+h4{
+	font-size: 16px;
+}
+
+.boxshadow h5 {
+	border: none;
+	-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.4);
+	box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.4);
+}
+
+h5{
+	padding:4px 10px;
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	margin-bottom:0;
+	font-weight: normal;
+}
+
+h5 a{
+	display: block;
+	color:#555;
+	text-decoration: none;
+}
+
+h5 a:hover{
+	color:#555;text-decoration: none
+}
+
+/*Validador Jquery*/
+form span.error{
+	margin-left: 10px;
+	color:#b94a48;
+}
+
+/*Estructuras*/
+.navbar-inner {
+	background-color: none;
+	background: #292929 url('img/bg-head-iventia.jpg') repeat-x top left !important;
+	border-bottom: none;
+	border-bottom: none;
+}
+
+.navbar-inner ul.nav li.active{}
+
+.navbar-inner ul.nav li.active a{
+	text-decoration: underline !important;
+}
+
+.navbar-inner ul.nav li a:hover{
+	text-decoration: underline !important;
+}
+
+.navbar-inner ul.nav li a{
+	font-family: 'futuracondensed';
+	width: auto;
+	padding: 32px 10px 31px 10px;
+	margin-right:12px;
+	font-size:14px;
+	text-transform: uppercase;
+	color:#eeeeee !important;
+	text-shadow:none !important;
+	background:none;
+}
+
+.navbar-inner ul.nav li a.nav-user{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: transparent;
+	text-decoration: none !important;
+}
+
+.nav-collapse .nav > li > a:hover,
+.nav-collapse .dropdown-menu a:hover {
+	background-color: #111;
+	text-decoration: none !important;
+}
+
+.nav-collapse .nav > li > a.nav-user .caret{
+    border-bottom-color: #ccc !important;
+    border-top-color: #ccc !important;
+	margin-top: 15px;
+}
+
+.brand{
+	font-family: 'chronicle';
+	color:#fff;
+	margin-left: 0 !important;
+	padding:0 !important;
+}
+
+.brand h1{
+	font-weight: normal;
+	margin-top: 20px;
+	margin-left: 0 !important;
+	padding:0 !important;
+	text-align: center;
+	color:#fff;
+	text-transform: uppercase;
+}
+
+.brand h1 span{
+	font-family: 'proxima_nova_rgregular';
+	display:block;
+	font-size: 14px;
+	letter-spacing: 16px;
+	font-weight: bold;
+}
+
+.container div[class="span9"]:first-child{
+	margin-top: 0 !important;
+}
+
+.iventia-nav-bottom {
+	height: 184px;
+	background-color: #C7B2DD;
+	color: #FFF;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.iventia-nav-bottom h2 {
+	font-family: 'futuracondensed';
+	font-size: 45px;
+	width: 100%;
+	position: relative;
+}
+
+.iventia-nav-bottom h4 {
+	font-size: 35px;
+	width: 100%;
+	position: relative;
+}
+
+.iventia-categories li a {
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #555;
+}
+
+.iventia-categories li a:hover {
+	color: #6832a2;
+}
+
+.iventia-categories i[class^='icon-'] {
+	float: left;
+	margin: 2px 6px 0 0;
+}
+
+.ml20 {
+	margin-left: 20px;
+}
+
+.purple {
+	color: #6832a2 !important;
+}
+
+.light-grey {
+	color: #AAAAAA;
+}
+
+.al {
+	text-align: left;
+}
+
+.ar{
+	text-align: right;
+}
+
+.ac{
+	text-align: center;
+}
+
+.iventia-categories li ul li span {
+	letter-spacing: 2px;
+	color: #ACACAC;
+}
+
+.iventia-block{
+	background: #fff;
+	border-bottom: 1px solid #777;
+	border-right: 1px solid #777;
+	border-left: 1px solid #777;
+	margin-bottom:15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.boxshadow .iventia-block{
+	border:none;
+	-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.2);
+	box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.2);
+}
+
+.iventia-block .content{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.iventia-block .content img {
+	width: 100%;
+}
+
+.iventia-block h2{
+	font-family: 'chronicle';
+	color:#555;
+	border-bottom: 2px solid #555;
+	margin:0;
+	margin-bottom: 15px;
+	margin-left:15px;
+	margin-right:15px;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 15px;
+	padding-bottom: 4px;
+}
+
+.iventia-block h2 a{
+	color:#555;
+	text-decoration: none;
+}
+
+.iventia-block h6:first-child{
+	margin-top: 0;
+}
+
+.iventia-block h6{
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-weight:normal;
+	font-size: 14px;
+	border-bottom: 1px dotted #999;
+}
+
+.iventia-block li{
+	line-height: 14px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.iventia-block li a:hover{
+	background: #fff;
+}
+
+.iventia-block li a p{
+	color:#b1b1b1;
+	margin-bottom: 0;
+}
+
+.iventia-block li a h4{
+	text-transform: uppercase;
+	color:#6832a2;
+	margin-bottom: 2px;
+	font-size: 14px;
+}
+
+.iventia-block li a.iventia-btn{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.iventia-block .iventia-post-header {
+	color:#555;
+	border-bottom: 2px solid #555;
+	margin:0;
+	margin-bottom: 15px;
+	margin-left:15px;
+	margin-right:15px;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 15px;
+}
+
+.iventia-block .iventia-post-header h3 {
+    font-family: 'chronicle';
+    font-size: 20px;
+    line-height: 15px;
+    margin: 0;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.iventia-block .iventia-post-header h3 a{
+    color: #555;
+}
+
+.iventia-block .iventia-post-header h3 a:hover{
+    color: #6832a2;
+}
+
+
+.iventia-block .iventia-post-header span {
+	float: right;
+	font-size: 14px;
+}
+
+.content .iventia-post-photo {
+	max-height: 296px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.iventia-post-footer {
+	color:#ACACAC;
+	border-top: 2px solid #E3E3E3;
+	padding-top: 15px;
+	margin:0;
+	margin-top: 15px;
+	text-transform: uppercase;
+	line-height: 15px;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.iventia-post-footer p{
+	display: inline-block;
+	margin-right: 5px;
+	text-transform: none;
+}
+
+.iventia-post-footer div {
+	width: 33.3333%;
+	float: left;
+}
+
+.iventia-post-footer a:hover{
+	text-decoration: underline;
+}
+
+.iventia-btn{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	text-shadow:none !important;
+	border:0;
+}
+
+.iventia-btn-purple{
+	background: #6832a2;
+	color: #fff;
+}
+
+.iventia-btn-purple:hover{
+	background: #6832a2 !important;
+	color:#fff !important;
+}
+
+.iventia-btn-grey{
+	background: #bbb;
+	color: #f2f2f2;
+}
+
+.iventia-btn-grey:hover{
+	background: #6832a2 !important;
+	color:#f2f2f2 !important;
+}
+
+
+/*Iconos sociales*/
+.content-social-icons{
+	text-align: right;
+}
+
+.social-icons{
+    background: url(img/social-icons.png) no-repeat top left;
+    display: inline-block;
+    margin-right:4px;
+}
+
+.social-icons-addthis{ background-position: 0 0; width: 15px; height: 15px; } 
+.social-icons-delicious{ background-position: 0 -25px; width: 15px; height: 15px; } 
+.social-icons-facebook{ background-position: 0 -50px; width: 15px; height: 15px; } 
+.social-icons-google_plus{ background-position: 0 -75px; width: 15px; height: 15px; } 
+.social-icons-linkedin{ background-position: 0 -100px; width: 15px; height: 15px; } 
+.social-icons-pinterest{ background-position: 0 -125px; width: 15px; height: 15px; } 
+.social-icons-rss{ background-position: 0 -150px; width: 15px; height: 15px; } 
+.social-icons-sharethis{ background-position: 0 -175px; width: 15px; height: 15px; } 
+.social-icons-twitter{ background-position: 0 -200px; width: 15px; height: 15px; } 
+.social-icons-youtube{ background-position: 0 -225px; width: 15px; height: 15px; } 
+
+/**Comentarios post*/
+.comment-list {
+	list-style: none;
+	margin-left: 15px !important;
+	margin-right: 15px !important;
+}
+
+.comment-list li {
+	position: relative;
+	overflow: hidden;
+	padding-top: 10px;
+	border-bottom: dashed 1px #E1E1E1;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+.comment-author{
+	overflow: hidden;
+}
+
+.comment-date{
+	float: right;
+	text-align: center;
+	max-width: 60px;
+	font-weight: bold;
+	display: block;
+	font-size: 15px;
+	line-height: 24px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  
+}
+
+.comment-data{
+	margin-top: 20px;
+}
+.comment-data:first-letter{
+	text-transform: uppercase;
+}
+
+.comment-reply-link{
+	font-size: 15px;
+}
+
+.comment-reply-link:hover{
+	text-decoration: underline;
+}
+
+textarea{
+	resize: none;
+}
+
+.block-iventia-logout{
+	display: block;
+	width: 100px;
+}
+
+.paginate {
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.paginate a{
+	color: #555 !important;
+	padding: 0 2px;
+}
+
+.paginate span{
+	padding: 0 2px;
+}
+
+.paginate i[class^="icon-"]{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.paginate .current {
+	font-weight: bold;
+	color: #6832a2;
+}
