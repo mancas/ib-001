@@ -71,8 +71,11 @@ $defaults = array( 'fields' => apply_filters( 'comment_form_default_fields', arr
 		</h2>
 		<?php if ( have_comments() ) : ?>
 			<ul class="comment-list">
-				<?php wp_list_comments( array( 'callback' => 'get_html_comments', 'style' => 'ul' ) ); ?>
+				<?php wp_list_comments( array( 'callback' => 'get_html_comments', 'style' => 'ul') ) ?>
 			</ul><!-- .commentlist -->
+            <div class="paginate">
+                <?php paginate_comments_links(array('prev_text' => '<i class="icon-chevron-left"></i>', 'next_text' => '<i class="icon-chevron-right"></i>')) ?>
+            </div>
 		<?php else: // have_comments() ?>
 			<div class="content">
 				<p>No hay comentarios. ¡Se el primero en comentar!</p>
@@ -93,7 +96,9 @@ $defaults = array( 'fields' => apply_filters( 'comment_form_default_fields', arr
 	</div>
 </div>
 
-<?php get_javascript() ?>
+<?php 
+    get_javascript();
+?>
 
 <script type="text/javascript">
 	$(document).ready(function(){

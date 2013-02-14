@@ -117,22 +117,62 @@ function get_html_comments($comment, $args, $depth)
 	print($html);
 }
 
-function get_jquery()
+function get_jquery($print = true)
 {
 	$path = get_bloginfo('template_directory');
-	print("<script type=\"text/javascript\" src=\"$path/js/jquery-1.8.3.min.js\"></script>");
+	if ($print) {
+		print("<script type=\"text/javascript\" src=\"$path/js/jquery-1.8.3.min.js\"></script>");
+	} else {
+		return "<script type=\"text/javascript\" src=\"$path/js/jquery-1.8.3.min.js\"></script>";
+	}
 }
 
-function get_bootstrap()
+function get_bootstrap($print = true)
 {
 	$path = get_bloginfo('template_directory');
-	print("<script type=\"text/javascript\" src=\"$path/js/bootstrap.min.js\"></script>");
+	if ($print) {
+		print("<script type=\"text/javascript\" src=\"$path/js/bootstrap.min.js\"></script>");
+	} else {
+		return "<script type=\"text/javascript\" src=\"$path/js/bootstrap.min.js\"></script>";
+	}
 }
 
 function get_javascript()
 {
-	get_jquery();
-	get_bootstrap();
+	if(function_exists('get_jquery') && function_exists('get_bootstrap')) {
+		get_jquery();
+		get_bootstrap();
+	}
+}
+
+function get_sidebar_script($print = true)
+{
+	$script = "<script type=\"text/javascript\">
+	$(document).ready(function(){
+		$('.category').click(function(event){
+			event.preventDefault();
+			var trigger_parents = $(this).parents();
+			var icon = $(this).children('i');
+
+			$(this).toggleClass('purple');
+
+			if ($(icon).hasClass('icon-chevron-right')) {
+				$(icon).removeClass('icon-chevron-right').addClass('icon-chevron-down');
+				$(trigger_parents[0]).next('li').children('ul').slideDown();
+			} else {
+				$(icon).removeClass('icon-chevron-down').addClass('icon-chevron-right');
+				$(trigger_parents[0]).next('li').children('ul').slideUp();
+			}
+		});
+
+	});
+</script>";
+
+	if ($print) {
+		print($script);
+	} else {
+		return $script;
+	}
 }
 
 ?>

@@ -17,27 +17,11 @@
 		</div>
 	</div><!-- .container -->
 
-<?php get_javascript() ?>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('.category').click(function(event){
-			event.preventDefault();
-			var trigger_parents = $(this).parents();
-			var icon = $(this).children('i');
+<?php 
+	get_javascript();
+	get_sidebar_script();
+?>
 
-			$(this).toggleClass('purple');
-
-			if ($(icon).hasClass('icon-chevron-right')) {
-				$(icon).removeClass('icon-chevron-right').addClass('icon-chevron-down');
-				$(trigger_parents[0]).next('li').children('ul').slideDown();
-			} else {
-				$(icon).removeClass('icon-chevron-down').addClass('icon-chevron-right');
-				$(trigger_parents[0]).next('li').children('ul').slideUp();
-			}
-		})
-
-	})
-</script>
 
 </body>
 </html>

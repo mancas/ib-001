@@ -7,7 +7,7 @@
 		<meta name="author" content="Carlos" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/bootstrap-responsive.min.css" />
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/iventia.blog.css" />
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/iventia.responsive.css" />
 
 	</head>
@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="iventia.me/app_dev.php/"><h1>Iventia <span>Jobs</span></h1></a>
+                <a class="brand" href="<?php echo home_url(); ?>"><h1>Iventia <span>Blog</span></h1></a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li class="active"><a href="iventia.me/app_dev.php/"><?php _e('Ofertas') ?></a></li>

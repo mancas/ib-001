@@ -32,4 +32,10 @@
 		
 		</div><!-- .row-fluid -->
 	</div><!-- .container -->
-<?php get_javascript() ?>
+<?php 
+	get_javascript();
+	get_sidebar_script();
+?>
+
+</body>
+</html>
