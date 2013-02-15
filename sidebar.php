@@ -4,7 +4,9 @@
 					<div class="content">
 						<ul class="nav iventia-categories">
 							<?php $categories_ids = get_all_category_ids(); ?>
-							<?php foreach ($categories_ids as $category_id) { ?>
+							<?php foreach ($categories_ids as $category_id) { 
+								$link = get_category_link( $category_id );
+							?>
 								<li><a href='#' class="category"><i class='icon-chevron-right'></i> <?php echo get_cat_name($category_id) ?></a></li>
 								<li>
 									<ul class="nav ml20 hide">
@@ -14,7 +16,10 @@
 										<?php } else { ?>
 											<?php foreach ($posts as $post) { ?>
 												<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?> <span>(<?php echo count(get_comments(array('post_id' => $post->ID))) ?>)</span></a></li>
-											<?php } } ?>
+											<?php } ?>
+												<li><a title="Ver Categoría" href="<?php echo $link ?>">Ver Categoría Completa</a></li>
+										<?php } ?>
+
 									</ul>
 								</li>
 							<?php } ?>

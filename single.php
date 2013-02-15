@@ -12,11 +12,7 @@
 							</div><!-- .iventia-block-header -->
 					
 							<div class="content">
-								<div class="iventia-post-photo">
-									<?php get_image_from_post($post, true) ?>
-								</div>
-
-								<p><?php echo strip_tags($post->post_content) ?></p>
+								<?php echo nl2br($post->post_content) ?>
 							</div><!-- .content -->
 						</div><!-- .iventia-block -->
 					</div><!-- .iventia-blog -->

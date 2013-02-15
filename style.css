@@ -218,6 +218,7 @@ form span.error{
 	font-weight: bold;
 	cursor: pointer;
 	color: #555;
+	display: inline-block;
 }
 
 .iventia-categories li a:hover {
@@ -239,6 +240,14 @@ form span.error{
 
 .light-grey {
 	color: #AAAAAA;
+}
+
+a.grey {
+	color: #555;
+}
+
+a.grey:hover{
+	color: #6832a2;
 }
 
 .al {
@@ -268,7 +277,7 @@ form span.error{
 	padding-bottom: 15px;
 }
 
-.boxshadow .iventia-block{
+.boxshadow .iventia-block, .boxshadow .iventia-block-category{
 	border:none;
 	-webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.2);
 	-moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.2);
@@ -546,4 +555,38 @@ textarea{
 .paginate .current {
 	font-weight: bold;
 	color: #6832a2;
+}
+
+.iventia-block-category{
+	background: #fff;
+	border-bottom: 1px solid #777;
+	border-right: 1px solid #777;
+	border-left: 1px solid #777;
+	margin-bottom:5px;
+	padding: 5px 15px;
+	color: #555;
+	overflow: hidden;
+}
+
+.iventia-block-category h3 {
+	margin: 0 !important;
+}
+
+.breadcumb{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcumb span{
+	padding: 0 5px;
+}
+
+.breadcumb span[class^='icon']{
+	margin-top: 3px;
+}
+
+.breadcumb li{
+	display: inline-block;
+	margin-right: 5px;
 }
