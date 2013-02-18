@@ -115,25 +115,38 @@ form span.error{
 /*Estructuras*/
 .navbar-inner {
 	background-color: none;
-	background: #292929 url('img/bg-head-iventia.jpg') repeat-x top left !important;
+	background: #292929 url('../img/bg-head-iventia.jpg') repeat-x top left !important;
 	border-bottom: none;
 	border-bottom: none;
 }
 
-.navbar-inner ul.nav li.active{}
+.navbar-inner ul.nav li {
+	padding: 32px 0 27px 0;
+}
+
+.navbar-inner ul.nav li.nav-purple {
+	background: #6732A4;
+}
+
+.navbar-inner ul.nav li.nav-purple a {
+	padding-left: 6px;
+	padding-right: 6px;
+}
 
 .navbar-inner ul.nav li.active a{
 	text-decoration: underline !important;
+	background: transparent !important;
 }
 
 .navbar-inner ul.nav li a:hover{
-	text-decoration: underline !important;
+	text-decoration: underline;
+	background: transparent !important;
 }
 
 .navbar-inner ul.nav li a{
 	font-family: 'futuracondensed';
 	width: auto;
-	padding: 32px 10px 31px 10px;
+	padding: 0 10px 0 10px;
 	margin-right:12px;
 	font-size:14px;
 	text-transform: uppercase;
@@ -142,24 +155,88 @@ form span.error{
 	background:none;
 }
 
-.navbar-inner ul.nav li a.nav-user{
-	padding-top: 25px;
-	padding-bottom: 25px;
+.navbar-inner ul.nav li.nav-user{
+	padding-bottom: 5px;
 	background: transparent;
 	text-decoration: none !important;
 }
 
-.nav-collapse .nav > li > a:hover,
-.nav-collapse .dropdown-menu a:hover {
-	background-color: #111;
+.navbar-inner ul.nav li.nav-user a.dropdown-toggle{
+	background: transparent !important;
+}
+
+.navbar-inner ul.nav > li.nav-user > a:hover{
+	background-color: transparent;
 	text-decoration: none !important;
 }
 
-.nav-collapse .nav > li > a.nav-user .caret{
+.navbar-inner ul.nav > li.nav-user > a .caret{
     border-bottom-color: #ccc !important;
     border-top-color: #ccc !important;
-	margin-top: 15px;
 }
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu{
+	padding: 5px 0;
+	margin: 4px 0 0 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	-moz-box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	left: -30px;
+}
+
+.navbar .nav > li > .dropdown-menu:after {
+	left: 40px !important;
+}
+
+.navbar .nav > li > .dropdown-menu:before {
+	left: 38px !important;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li{
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li a{
+	color:#666 !important;
+	padding: 4px 10px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li a:hover{
+	text-decoration: underline;
+}
+
+#iventia-menu-user.dropdown-menu a:hover{
+	color:#333 !important;
+	background: #f2f2f2;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li.logout{
+	position:relative;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li.logout a{
+	color:#FFF !important;
+	background: #6832a2 !important;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li.logout a .icon{
+	position:absolute;
+	right:6px;
+	top:6px;
+}
+
 
 .brand{
 	font-family: 'chronicle';
@@ -186,17 +263,101 @@ form span.error{
 	font-weight: bold;
 }
 
+.navbar-form{
+	background: transparent !important;
+	width:auto;
+	margin-bottom:0 !important;
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	border-bottom: none !important;
+	z-index: 9;
+}
+
+.navbar-form .iventia-btn-grey{
+	padding-left: 18px !important;
+	padding-right: 18px !important;
+}
+
+.navbar-form h6{
+	margin-bottom:0;
+	text-transform: uppercase;
+}
+
+.navbar-form a.text{
+	display: block;
+	text-decoration: underline;
+	color:#b1b1b1;
+	margin-top: 10px;
+}
+
+.navbar-form a.text:hover{
+	color:#555;
+}
+
+#iventia-phrase .span12{
+	color:#944ae9;
+	line-height: 24px;
+	min-height: 24px;
+	padding-top: 2px;
+}
+
+#iventia-banner-top{
+	margin-bottom: -20px;
+	background-image: url('../img/banner-top.jpg');
+	color:#fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+#iventia-banner-top-text{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#iventia-banner-top-text h2{
+	font-family: 'didothtfm';
+	font-style:italic;
+	font-weight: normal;	
+	margin-bottom: 0;
+	line-height: 70px;
+	font-size:60px;	
+}
+
+#iventia-banner-top-text h2 strong{
+	font-weight: normal;	
+	font-size:120px;
+	display:block;
+	text-transform: uppercase;
+}
+
+#iventia-banner-top-text h4{
+	text-align: left;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#iventia-banner-top-text h4 span{
+	font-weight: normal;
+	font-size: 14px;
+	display:block;
+	text-align: center;
+	text-transform: lowercase;
+	margin-top: 10px;
+}
+
 .container div[class="span9"]:first-child{
 	margin-top: 0 !important;
 }
 
 .iventia-nav-bottom {
-	height: 184px;
+	height: 190px;
 	background-color: #C7B2DD;
 	color: #FFF;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	z-index: 1;
 }
 
 .iventia-nav-bottom h2 {
@@ -408,11 +569,17 @@ a.grey:hover{
 	display: inline-block;
 	margin-right: 5px;
 	text-transform: none;
+	max-width: 730px;
 }
 
-.iventia-post-footer div {
-	width: 33.3333%;
-	float: left;
+.iventia-post-footer .post-category {
+	overflow: hidden;
+	position: relative;
+}
+
+.iventia-post-footer .post-social{
+	display: inline-block;
+	float: right;
 }
 
 .iventia-post-footer a:hover{

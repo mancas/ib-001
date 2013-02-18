@@ -120,20 +120,33 @@ form span.error{
 	border-bottom: none;
 }
 
-.navbar-inner ul.nav li.active{}
+.navbar-inner ul.nav li {
+	padding: 32px 0 27px 0;
+}
+
+.navbar-inner ul.nav li.nav-purple {
+	background: #6732A4;
+}
+
+.navbar-inner ul.nav li.nav-purple a {
+	padding-left: 6px;
+	padding-right: 6px;
+}
 
 .navbar-inner ul.nav li.active a{
 	text-decoration: underline !important;
+	background: transparent !important;
 }
 
 .navbar-inner ul.nav li a:hover{
-	text-decoration: underline !important;
+	text-decoration: underline;
+	background: transparent !important;
 }
 
 .navbar-inner ul.nav li a{
 	font-family: 'futuracondensed';
 	width: auto;
-	padding: 32px 10px 31px 10px;
+	padding: 0 10px 0 10px;
 	margin-right:12px;
 	font-size:14px;
 	text-transform: uppercase;
@@ -142,24 +155,81 @@ form span.error{
 	background:none;
 }
 
-.navbar-inner ul.nav li a.nav-user{
+.navbar-inner ul.nav li.nav-user{
 	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-bottom: 5px;
 	background: transparent;
 	text-decoration: none !important;
 }
 
-.nav-collapse .nav > li > a:hover,
-.nav-collapse .dropdown-menu a:hover {
-	background-color: #111;
+.navbar-inner ul.nav li.nav-user a.dropdown-toggle{
+	background: transparent !important;
+}
+
+.navbar-inner ul.nav > li.nav-user > a:hover{
+	background-color: transparent;
 	text-decoration: none !important;
 }
 
-.nav-collapse .nav > li > a.nav-user .caret{
+.navbar-inner ul.nav > li.nav-user > a .caret{
     border-bottom-color: #ccc !important;
     border-top-color: #ccc !important;
 	margin-top: 15px;
 }
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu{
+	padding: 5px 0;
+	margin: 4px 0 0 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	-moz-box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li{
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li a{
+	color:#666 !important;
+	padding: 4px 10px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li a:hover{
+	text-decoration: underline;
+}
+
+#iventia-menu-user.dropdown-menu a:hover{
+	color:#333 !important;
+	background: #f2f2f2;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li.logout{
+	position:relative;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li.logout a{
+	color:#FFF !important;
+	background: #6832a2 !important;
+}
+
+.navbar-inner ul.nav > li.nav-user .dropdown-menu li.logout a .icon{
+	position:absolute;
+	right:6px;
+	top:6px;
+}
+
 
 .brand{
 	font-family: 'chronicle';
@@ -195,69 +265,25 @@ form span.error{
 	border-bottom: none !important;
 }
 
-.navbar-form fieldset{
-	padding-top:6px;
-	padding-bottom:6px;
+.navbar-form .iventia-btn-grey{
+	padding-left: 18px !important;
+	padding-right: 18px !important;
 }
 
 .navbar-form h6{
-	margin-bottom:2px;
+	margin-bottom:0;
 	text-transform: uppercase;
 }
 
 .navbar-form a.text{
+	display: block;
 	text-decoration: underline;
 	color:#b1b1b1;
-	text-align: center;
+	margin-top: 10px;
 }
 
 .navbar-form a.text:hover{
 	color:#555;
-}
-
-#iventia-menu-user.dropdown-menu{
-	padding: 5px 0;
-	margin: 2px 0 0;
-	background-color: #fff;
-	border: 1px solid #ccc;
-	border: 1px solid rgba(0,0,0,0.2);
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	-webkit-box-shadow: 0 5px 10px rgba(50, 50, 50,0.4);
-	-moz-box-shadow: 0 5px 10px rgba(50, 50, 50,0.4);
-	box-shadow: 0 5px 10px rgba(50, 50, 50,0.4);
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;
-	background-clip: padding-box;
-}
-
-#iventia-menu-user.dropdown-menu a{
-	color:#999 !important;
-	padding: 6px 10px;
-	margin-bottom: 0;
-	font-size: 12px;
-	text-decoration: none !important;
-}
-
-#iventia-menu-user.dropdown-menu a:hover{
-	color:#333 !important;
-	background: #f2f2f2;
-}
-
-#iventia-menu-user.dropdown-menu li.logout{
-	position:relative;
-}
-
-#iventia-menu-user.dropdown-menu li.logout a{
-	color:#FFF !important;
-	background: #6832a2;
-}
-
-#iventia-menu-user.dropdown-menu li.logout a .icon{
-	position:absolute;
-	right:6px;
-	top:6px;
 }
 
 #iventia-phrase .span12{
@@ -362,6 +388,7 @@ form span.error{
 	font-size: 20px;
 	line-height: 15px;
 	padding-bottom: 4px;
+	padding-top: 8px;
 }
 
 .iventia-block h2 a{
@@ -381,29 +408,29 @@ form span.error{
 	border-bottom: 1px dotted #999;
 }
 
-.iventia-block li{
+.iventia-block > li{
 	line-height: 14px;
 	font-size: 12px;
 	margin-bottom: 10px;
 }
 
-.iventia-block li a:hover{
+.iventia-block > li > a:hover{
 	background: #fff;
 }
 
-.iventia-block li a p{
+.iventia-block > li > a p{
 	color:#b1b1b1;
 	margin-bottom: 0;
 }
 
-.iventia-block li a h4{
+.iventia-block > li > a h4{
 	text-transform: uppercase;
 	color:#6832a2;
 	margin-bottom: 2px;
 	font-size: 14px;
 }
 
-.iventia-block li a.iventia-btn{
+.iventia-block > li > a.iventia-btn{
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -414,6 +441,20 @@ form span.error{
 	border-radius: 0;
 	text-shadow:none !important;
 	border:0;
+	padding-left:25px !important;
+	padding-right:25px !important;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.iventia-btn-dark{
+	background: #3E3D42;
+	color: #fff;
+}
+
+.iventia-btn-dark:hover{
+	background: #3E3D42;
+	color: #fff;
 }
 
 .iventia-btn-purple{
@@ -427,8 +468,8 @@ form span.error{
 }
 
 .iventia-btn-grey{
-	background: #bbb;
-	color: #f2f2f2;
+	background: #EBEBEB;
+	color: #999;
 }
 
 .iventia-btn-grey:hover{
@@ -439,12 +480,12 @@ form span.error{
 .iventia-btn-white{
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 	background: #fff !important;
-	color:#6832A2;
-	border: 1px solid #dedede;
+	color:#999;
+	border: 1px solid #ddd;
 }
 
 .iventia-btn-white:hover{
-	color:#6832A2 !important;
+	color:#777 !important;
 }
 
 .iventia-box form{
@@ -503,23 +544,86 @@ form span.error{
 
 .iventia-list li{
 	line-height: 30px;
-	border-bottom: 1px dashed #ddd;
-	padding: 6px 10px;
+	border-top: 1px dashed #ddd;
+	padding: 10px 0;
 	font-size: 14px;
+}
+
+.iventia-list li h4{
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+	text-transform: uppercase;
+	color:#6832a2;
+}
+
+.iventia-list li .date{
+	display: block;
+	color:#464646;
+	font-size: 11px;
+	line-height: 14px;
+}
+
+
+.iventia-list li .info{
+	display: block;
+	color:#999;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 2px 4px;
+	background: #EBEBEB;
+}
+
+.iventia-list li .info span{
+	margin-left:6px;
+}
+
+.iventia-list li .info span:first-child{
+	margin-left:0;
+}
+
+.iventia-list li .text{
+	margin: 10px 0 5px 0;
+	display: block;
+	color:#999;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.iventia-list li:first-child{
+	border-top: 0;
+	padding-top: 0;
 }
 
 .iventia-list li:last-child{
 	border-bottom: 0;
 }
 
-.iventia-list li img{
-	margin-right:10px;
+.iventia-list li.more{
+	line-height: 20px;
+	padding: 4px 6px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	border-top: 0;
+	background: #3E3D42;
+}
+
+.iventia-list li.more a{
+	color:#fff;
+	text-transform: uppercase;
 }
 
 .iventia-list-media{
-	border-bottom:1px dashed #ddd;
 	padding: 20px;
 	display: table;
+	margin-left:-15px;
+	margin-right:-15px;
+	width: auto;
+}
+
+.iventia-list-media:nth-child(2){
+	background:#faf9fe;
 }
 
 .iventia-list-media:first-child{
@@ -535,27 +639,29 @@ form span.error{
 	margin: 0 0 4px 0;
 }
 
-.iventia-list-media p{
+.iventia-list-media .right p{
 	margin:10px 0 0 0;
 	font-size: 12px;
 	text-align: justify;
+	padding: 0 20px 0 0;
 }
 
 .iventia-list-media .left{
 	float:left;
-	width: 11%;
+	width:14%;
+	min-width: 100px;
 	margin-right: 2%;
 	text-align: center;
-}
-
-.iventia-list-media .left .img-polaroid{
-	margin: 0 20px 10px 0;
 }
 
 .iventia-list-media .right{
 	position: relative;
 	float:right;
-	width: 85%;
+	width:84%;
+}
+
+.iventia-list-media .left .img-polaroid{
+	margin: 0 20px 10px 0;
 }
 
 .iventia-list-media .right .highlight{
@@ -642,10 +748,9 @@ form span.error{
 	height: 236px;
 }
 
-.thumbnails .no-image{
+.no-image{
 	display: block;
 	background: url('../img/no-photo.png') center no-repeat;
-	width:100%;
 	height: 150px;
 }
 
@@ -782,6 +887,11 @@ footer a:last-child{
 
 
 /*Estilos sueltos*/
+.highlight{
+    background-image: url('../img/star.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
 img.micro{
 	width:20px;
 }
@@ -792,6 +902,10 @@ img.mini{
 
 img.small{
 	width:80px;
+}
+
+img.medium{
+	width:150px;
 }
 
 .purple{	
@@ -928,6 +1042,7 @@ img.small{
 .iventia-photo-perfil-nav{
 	width:30px;
 	border: 1px solid #666;
+	background: #fff;
 }
 
 #iventiajobs_usuariobundle_candidatoperfiltype_fechaNacimiento select{
@@ -979,7 +1094,7 @@ a.btn-mini [class*=" icon-"] {
 
 .label {
 	text-shadow:none !important;
-	padding: 4px 8px;
+	padding: 4px 10px;
 	border-radius: 0;
 }
 
@@ -989,6 +1104,32 @@ a.btn-mini [class*=" icon-"] {
 
 .pagination{
 	float:right;
+}
+
+.pagination ul {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+	-webkit-border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
+	-webkit-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-topleft: 0;
+}
+
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+	-webkit-border-bottom-right-radius: 0;
+	border-bottom-right-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-topright: 0;
 }
 
 input:focus:required:invalid,
@@ -1094,7 +1235,7 @@ select:focus:required:invalid:focus{
 }
 
 /*Descripciones*/
-.iventia-description .top{
+.iventia-description > .top{
 	display:block;
 	width: 100%;
 }
@@ -1114,15 +1255,6 @@ select:focus:required:invalid:focus{
 
 .iventia-description .top .right{
 	width:78%;
-}
-
-.iventia-description .top .right .highlight{
-	position:absolute;
-	top:4px;
-	right:10px;
-	display: block;
-	width: 32px;
-	height: 32px;
 }
 
 .iventia-description .top .right ul{
@@ -1157,7 +1289,7 @@ select:focus:required:invalid:focus{
 	border-bottom: 0;
 }
 
-.iventia-description .bottom{
+.iventia-description > .bottom{
 	display:block;
 	width: 100%;
 	height:auto;
@@ -1173,6 +1305,12 @@ select:focus:required:invalid:focus{
     border-top: 1px solid #E8EBEC;
     margin-top: 25px;
     padding: 15px;
+}
+
+.iventia-description .dl-horizontal{
+	text-align: justify;
+	margin-right: 10px;
+	word-wrap: normal;
 }
 
 /*Páginas de error*/
@@ -1343,3 +1481,43 @@ select:focus:required:invalid:focus{
 	margin-left: 5px;
 }
 
+/*Iconos sociales*/
+.content-social-icons{
+	text-align: right;
+}
+
+.social-icons{
+    background: url(../img/social-icons.png) no-repeat top left;
+    display: inline-block;
+    margin-right:4px;
+}
+
+.social-icons-addthis{ background-position: 0 0; width: 15px; height: 15px; } 
+.social-icons-delicious{ background-position: 0 -25px; width: 15px; height: 15px; } 
+.social-icons-facebook{ background-position: 0 -50px; width: 15px; height: 15px; } 
+.social-icons-google_plus{ background-position: 0 -75px; width: 15px; height: 15px; } 
+.social-icons-linkedin{ background-position: 0 -100px; width: 15px; height: 15px; } 
+.social-icons-pinterest{ background-position: 0 -125px; width: 15px; height: 15px; } 
+.social-icons-rss{ background-position: 0 -150px; width: 15px; height: 15px; } 
+.social-icons-sharethis{ background-position: 0 -175px; width: 15px; height: 15px; } 
+.social-icons-twitter{ background-position: 0 -200px; width: 15px; height: 15px; } 
+.social-icons-youtube{ background-position: 0 -225px; width: 15px; height: 15px; } 
+
+/*popover*/
+.popover {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	-moz-box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	box-shadow: 0 1px 3px rgba(50, 50, 50,0.2);
+	padding: 0;
+}
+
+.popover-title {
+	background-color: #3E3D42;
+	color: #fff;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}

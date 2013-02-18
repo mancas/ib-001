@@ -17,9 +17,9 @@
 						</div><!-- .iventia-block -->
 					</div><!-- .iventia-blog -->
 
-					<div class="iventia-post-comments">
-						<?php comments_template('', true); ?>
-					</div><!-- .iventia-post-comments -->
+					<!--<div class="iventia-post-comments">
+						<?php //comments_template('', true); ?>
+					</div>--><!-- .iventia-post-comments -->
 					
 				<?php endwhile; endif;?>
 			</div><!-- .sapn9 -->

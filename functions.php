@@ -27,9 +27,8 @@ function iventia_blog_post($post, $limit = 300)
 							$image_html
 							. "<p>" . $post_text . "</p>
 							<div class=\"iventia-post-footer\">
-								<div class=\"al post-category\"><p>Posteado en: " . print_categories_in_line(get_the_category($post->ID)) . "</p></div>
-								<div class=\"ac post-comments\"><p>Comentarios: </p><span class=\"purple\">" . count(get_comments(array('post_id' => $post->ID))) . "</span></div>
-								<div class=\"ar post-social\"><p>Compartir: </p>" . print_social_icons($post) . "</div>
+								<p>Comentarios: <span class=\"purple\">". count(get_comments(array('post_id' => $post->ID))) ."</span></p>
+								<div class=\"al post-category\"><p>Posteado en: " . print_categories_in_line(get_the_category($post->ID)) . "</p><div class=\"ar post-social\">" . print_social_icons($post) . "</div></div>
 							</div><!-- iventia-post-footer -->
 						</div><!-- .content -->
 					</div><!-- .iventia-block -->
@@ -164,7 +163,6 @@ function get_sidebar_script($print = true)
 				$(trigger_parents[0]).next('li').children('ul').slideUp();
 			}
 		});
-
 	});
 </script>";
 

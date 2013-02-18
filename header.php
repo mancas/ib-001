@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory')?>/css/iventia.responsive.css" />
 
+
 	</head>
 
 <body>
@@ -31,7 +32,41 @@
                         <li><a href="#"><?php _e('Catálogo') ?></a></li>
                         <li><a href="<?php echo home_url(); ?>"><?php _e('Blog') ?></a></li>
                         <li><a href="#"><?php _e('Contacto') ?></a></li>
+                            <?php if (!(current_user_can('level_0'))){ ?>
+                                <li class="nav-purple"><a href="#" data-toggle="collapse" data-target=".navbar-form"><?php _e('Acceso') ?></a></li>
+                            <?php } else {
+                                global $current_user;
+                                get_currentuserinfo();
+                             ?>
+                                <li class="dropdown nav-user">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <?php echo ucfirst($current_user->display_name) ?>
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="logout">
+                                            <a href="<?php echo wp_logout_url(get_permalink()); ?>">
+                                                <?php _e('Cerrar Sesión') ?>
+                                                <i class="icon icon-share icon-white"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            <?php } ?>
                     </ul>
+
+                    <form id="login-form" class="collapse navbar-form form-horizontal" method="post" action="<?php echo get_option('home'); ?>/wp-login.php">
+                        <fieldset>
+                            <div class="purple visible-desktop"><?php _e('Indique sus credenciales'); ?></div>
+                            <input type="text" placeholder="Usuario" class="span12" id="log" name="log" value="<?php echo wp_specialchars(stripslashes($user_login), 1) ?>">
+                            <input type="password" placeholder="Password" class="span12" name="pwd" id="pwd"><br />
+                            <button type="submit" class="btn iventia-btn iventia-btn-purple"><?php _e('OK') ?></button>
+                            <p>
+                                <label for="rememberme"><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /><?php _e('Recuérdame') ?></label>
+                                <input type="hidden" name="redirect_to" value="<?php echo $_SERVER['REQUEST_URI']; ?>" />
+                            </p>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
